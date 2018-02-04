@@ -1,9 +1,7 @@
 # Helm Client
 
-### Container Details
-[![](https://images.microbadger.com/badges/image/rimusz/k8s-helm.svg)](http://microbadger.com/images/rimusz/k8s-helm "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/rimusz/k8s-helm.svg)](http://microbadger.com/images/rimusz/k8s-helm "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/commit/rimusz/k8s-helm.svg)](http://microbadger.com/images/rimusz/k8s-helm "Get your own commit badge on microbadger.com")
+### Build Status
+[![Docker Repository on Quay](https://quay.io/repository/rimusz/k8s-helm/status "Docker Repository on Quay")](https://quay.io/repository/rimusz/k8s-helm)
 
 ## Supported tags and respective `Dockerfile` links
 * `v2.8.0`, `latest`    [(v2.8.0/Dockerfile)](https://github.com/rimusz/k8s-helm/blob/v2.8.0/Dockerfile)
