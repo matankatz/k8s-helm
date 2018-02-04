@@ -36,6 +36,3 @@ steps:
   id: push_image_quay_io
   waitFor:
   - 'fetch_robot_creds'
-
-images:
-- 'gcr.io/$PROJECT_ID/kube-helm'
