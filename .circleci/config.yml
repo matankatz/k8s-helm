@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: 18.01.0.ce-git
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Helm container
+          command: |
+            GIT_BRANCH=$CIRCLE_BRANCH make docker_build
+      - run:
+          name: Test Helm container
+          command: |
+            GIT_BRANCH=$CIRCLE_BRANCH make test
+      - run:
+          name: Publish Helm container
+          command: |
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            GIT_BRANCH=$CIRCLE_BRANCH make docker_push
