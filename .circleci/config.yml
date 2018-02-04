@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: 18.01.0.ce-git
+      - image: docker:18.01.0.ce-git
     steps:
       - checkout
       - setup_remote_docker
