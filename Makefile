@@ -9,15 +9,17 @@ else
 	DOCKER_TAG = $(GIT_BRANCH)
 endif
 
-docker_build:
+build:
 	docker build \
 	  --build-arg VCS_REF=`git rev-parse --short HEAD` \
 	  --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
 	  -t $(DOCKER_IMAGE):$(DOCKER_TAG) .
 
-docker_push:
+push:
 	# Push to DockerHub
 	docker push $(DOCKER_IMAGE):$(DOCKER_TAG)
 
 test:
 	docker run $(DOCKER_IMAGE):$(DOCKER_TAG) version --client
+
+all: build test push

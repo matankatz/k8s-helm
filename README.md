@@ -1,8 +1,5 @@
 # Helm Client
 
-### CircleCI Build Status
-[![CircleCI](https://circleci.com/gh/rimusz/k8s-helm.svg?style=svg)](https://circleci.com/gh/rimusz/k8s-helm)
-
 ### Container Details
 [![](https://images.microbadger.com/badges/image/rimusz/k8s-helm.svg)](http://microbadger.com/images/rimusz/k8s-helm "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/rimusz/k8s-helm.svg)](http://microbadger.com/images/rimusz/k8s-helm "Get your own version badge on microbadger.com")
